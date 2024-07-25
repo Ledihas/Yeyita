@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeyita's Bar</title>
+    <!-- Agregar Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 25, 0, 0.2)), url("{% static 'images/fondo.jpeg' %}"); /* Imagen de fondo */
+            background-size: cover; /* Cubre toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            min-height: 100vh; /* Altura mínima de la ventana */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Centra el texto */
+            overflow: auto; /* Permite el desplazamiento si es necesario */
+        }
+        
+        h1 {
+            position: absolute; 
+            top: 10px;
+            font-size: 60px; /* Tamaño del título */
+            color: #ffcc00; /* Color amarillo */
+            margin-bottom: 20px; /* Espacio debajo del título */
+            font-family: 'Pacifico', cursive; /* Fuente del título */
+        }
+
+        p {
+            font-size: 24px; /* Tamaño del párrafo */
+            color: #fff; /* Color del texto blanco */
+            max-width: 600px; /* Ancho máximo del párrafo */
+            margin-bottom: 40px; /* Espacio debajo del párrafo */
+        }
+
+        .btn {
+            text-decoration: none;
+            --offset: 16px;
+            padding: 15px 30px; /* Espaciado interno */
+            font-size: 18px; /* Tamaño de fuente */
+            color: white; /* Color del texto */
+            background-color: blue; /* Color de fondo del botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+
+        .btn:hover {
+            background-color: #16AAF5; /* Color de fondo al pasar el mouse */
+        }
+
+        .footer {
+            margin-top: 40px; /* Espacio encima del pie de página */
+            font-size: 18px; /* Tamaño del texto del pie de página */
+            color: #ccc; /* Color gris claro */
+        }
+
+        /* Estilo para el ícono de la corona */
+        .crown-icon {
+            position: absolute; /* Posición absoluta para situarlo en la parte superior */
+            top: 20px; /* Espacio desde la parte superior */
+            left: 20px; /* Espacio desde la izquierda */
+            font-size: 24px; /* Tamaño del ícono */
+            color: #ffcc00; /* Color del ícono */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+            transition: color 0.3s; /* Transición suave para el color */
+        }
+
+        .crown-icon:hover {
+            color: #16AAF5; /* Cambia el color al pasar el mouse */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Ícono de corona que ejecuta el método 'a_nombre' -->
+    <a href="{% url 'a_nombre:a_nombre' %}" class="crown-icon">
+        <i class="fas fa-crown"></i>
+    </a>
+
+    <h1>Bienvenido a Yeyita's Bar</h1>
+   
+
+    <p>Disfruta de las mejores bebidas y un ambiente acogedor. ¡Ven y vive una experiencia única!</p>
+    
+    <!-- Botón que redirige a la página de ofertas -->
+    <a href="{% url 'ofertas:ofertas' %}" class="btn">Ver nuestros servicios</a>
+    
+    <div class="footer">
+        &copy; 2024 Yeyita's Bar. Todos los derechos reservados.
+    </div>
+</body>
+</html>
