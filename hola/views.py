@@ -75,3 +75,12 @@ def a_nombre(response):
     ctc= Context()
     documento = plt.render(ctc)
     return  HttpResponse(documento)   
+
+def exito(request):
+    return render(request, 'exito.html')
+
+def nosotros(request):
+    return render(request, 'nosotros.html')
+
+def contacto(request):
+    return render(request, 'contacto.html')

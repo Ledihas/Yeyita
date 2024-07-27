@@ -33,8 +33,10 @@ urlpatterns = [
     path('taberna/',include('taberna.urls',namespace='ofertasTa')),
     path('taberna/',include('taberna.urls',namespace='bebidas')),
     path('taberna/',include('taberna.urls',namespace='specials')),
-
-    
+    path('evento/',include('evento.urls')),
+    path('evento/',include('evento.urls',namespace='reserva')),
+    path('nosotros/', views.nosotros),
+    path('contacto/', views.contacto),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

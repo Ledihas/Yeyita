@@ -4,15 +4,12 @@ from .views import *
 from django.conf import settings
 from django.conf.urls.static import static
 
-app_name = 'ofertas' 
+app_name = 'evento' 
 
 urlpatterns = [
-    path('hi/',hola_mundo),
-    path('Home/',Home),
-    path('ofertas/',ofertas,name='ofertas'),
-    path('a_nombre/',a_nombre,name='a_nombre'),
-    path('exito/',exito,name='exito'),
-  
+    path('eventos/',eventos_list,name='eventos'),
+    
+   
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

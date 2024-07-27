@@ -82,9 +82,26 @@
                 opacity: 1;
             }
         }
+        .backy {
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: red;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .backy: hover {
+            color: #16AAF5;
+
+        }
     </style>
 </head>
 <body>
+    <div class="back">
+        <a href="/"class= "backy"> Atras </a>
+    </div>
     <div class="container">
         <img src="{% static 'images/icoy.jpeg' %}" alt="Imagen de Yeyitas">
         <h1>Servicios</h1>

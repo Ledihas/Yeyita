@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #c71616;
+    background: linear-gradient( #caa914, #1c27c2);
     /* Color amarillo claro */
     padding: 15px;
     /* Espaciado interno */
@@ -23,7 +23,7 @@
 }
 
 .navbar-brand {
-    color: #1c1d03;
+    color: #09001f;
     /* Color del texto del logo */
     text-decoration: none;
     /* Sin subrayado */
@@ -52,7 +52,7 @@
 }
 
 .navbar-menu a {
-    color: #1c1d03;
+    color: #070701;
     /* Color del texto del menú */
     text-decoration: none;
     /* Sin subrayado */
@@ -127,7 +127,7 @@ h2 {
 .btn,
 .btn1,
 .btn2 {
-    color: tomato;
+    color: rgb(226, 61, 32);
     padding: 40vh 10px;
     margin: 10px;
     border: none;
@@ -141,7 +141,7 @@ h2 {
     animation: fadeIn 1s ease-in-out;
     cursor: pointer;
     background-image: none;
-    transition: background-image 0.3s;
+    transition: background-image 0.5s, transform 0.6s;
 }
 
 .btn:hover {
@@ -149,6 +149,8 @@ h2 {
     /* Color del texto */
     background-image: url('../images/copa.jpeg');
     /* Imagen de fondo */
+    opacity: 100;
+    transform: translateY(-5px);
 }
 
 .btn1:hover {
@@ -158,6 +160,7 @@ h2 {
     /* Sombra del texto */
     background-image: url('../images/spec.jpeg');
     /* Imagen de fondo */
+    transform: translateY(-5px);
 }
 
 .btn2:hover {
@@ -165,6 +168,7 @@ h2 {
     /* Color del texto */
     background-image: url('../images/helado.jpeg');
     /* Imagen de fondo */
+    transform: translateY(-5px);
 }
 
 .special-bg {

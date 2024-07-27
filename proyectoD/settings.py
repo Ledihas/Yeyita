@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'hola',
     's_diurno',
     'terraza',
-    'taberna',
+    'taberna','evento',
+    
 ]
 
 MIDDLEWARE = [
