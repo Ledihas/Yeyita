@@ -32,10 +32,8 @@ ALLOWED_HOSTS = ['yeyitasbar1.onrender.com', 'localhost', '127.0.0.1']
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),
-]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
 
