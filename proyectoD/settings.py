@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-usqea27n8%q)-mkqm=$-j6j@%nkyx#+9=d3!3(o0osmqhygvjc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['yeyitasbar1.onrender.com', 'localhost', '127.0.0.1']
 
@@ -33,7 +33,7 @@ STATIC_URL = '/static/'
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
 
