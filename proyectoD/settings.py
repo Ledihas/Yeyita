@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-usqea27n8%q)-mkqm=$-j6j@%nkyx#+9=d3!3(o0osmqhygvjc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['YeyitasBar.render.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['yeyitasbar1.onrender.com', 'localhost', '127.0.0.1']
 
 
 STATIC_URL = '/static/'
