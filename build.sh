@@ -6,7 +6,7 @@ set -o errexit  # Termina el script si hay un error
 pip install -r requirements.txt
 
 # Reúne archivos estáticos
-python manage.py collectstatic --no-input
+python manage.py collectstatic
 
 # Realiza las migraciones de la base de datos
 python manage.py migrate
