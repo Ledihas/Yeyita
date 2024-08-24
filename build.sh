@@ -10,3 +10,6 @@ python manage.py collectstatic
 
 # Realiza las migraciones de la base de datos
 python manage.py migrate
+
+# Reinicia la aplicación
+touch tmp/restart.txt
